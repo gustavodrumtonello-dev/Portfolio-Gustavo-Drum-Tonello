@@ -1,0 +1,118 @@
+:root {
+  --color-primary:              #b1c5ff;
+  --color-primary-container:    #608df4;
+  --color-on-primary:           #002c70;
+  --color-on-primary-container: #002663;
+  --color-surface:              #2c2c2c;
+  --color-surface-container:    #1f1f1f;
+  --color-surface-container-low: #333232;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-lowest: #292828f6;
+  --color-on-surface:           #e2e2e2;
+  --color-on-surface-variant:   #c1c6d5;
+  --color-outline:              #8b919f;
+  --color-outline-variant:      #414753;
+  --color-secondary-container:  #2ff801;
+  --color-on-secondary-container: #0f6d00;
+  --color-tertiary-container:   #cca830;
+  --color-on-tertiary-container: #4f3e00;
+  --color-surface-variant:      #353535;
+ 
+  --font-headline: 'Domine', serif;
+  --font-body:     'Inter', sans-serif;
+ 
+  --radius:    0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+ 
+  --max-width: 1280px;
+}
+
+.material-symbols-outlined {
+    font-family: 'Audiowide';
+}
+ 
+body {
+  font-family: var(--font-body);
+  background-image: url('https://wallpapers.com/images/hd/roving-blue-wave-of-black-hole-8hio4lg9kbgcx6wc.jpg') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+ 
+::selection {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}
+ 
+/* ---------- Header ---------- */
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10vw;
+  height: 10vh;
+
+}
+
+.imagemtitulo {
+    padding: 1rem;
+    margin: 1rem;
+    vertical-align: middle;
+}
+ 
+.header-brand {
+  color: #fff;
+  font-family: 'Audiowide';
+  font-size: 1.50rem;
+  margin: 2rem;
+  padding: 1rem;
+  white-space: nowrap;
+}
+ 
+/* Nav links (desktop) */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-family: var(--font-headline);
+}
+ 
+.nav-link {
+  text-decoration: none;
+  color: #9ca3af;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+ 
+.nav-link:hover {
+  color: #fff;
+}
+ 
+.nav-link--active {
+  color: #3b82f6;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 2px;
+  pointer-events: none;
+}
+ 
+/* Botão hambúrguer (mobile) */
+.nav-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+ 
+@media (max-width: 767px) {
+  .nav-links    { display: none; }
+  .nav-menu-btn { display: block; }
+}

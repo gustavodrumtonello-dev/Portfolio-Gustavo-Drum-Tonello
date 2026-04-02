@@ -1,0 +1,68 @@
+/* ============================================================
+   footer.css
+   ============================================================ */
+
+.site-footer {
+  background-color: #000;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  padding: 3rem 1.5rem;
+}
+
+.footer-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+.footer-brand {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+/* Links */
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #6b7280;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: #fff; }
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.25s ease;
+}
+
+.footer-links a:hover::after { width: 100%; }
+
+.footer-copy {
+  color: #6b7280;
+  font-size: 0.8rem;
+}
