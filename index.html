@@ -1,138 +1,270 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfolio</title>
-    <link rel="stylesheet" href="./styles/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Gustavo Drum Tonello - Desenvolvedor Web e Entusiasta de Tecnologia">
+  <meta name="theme-color" content="#0f1419">
+  <title>Gustavo Drum Tonello | Portfólio</title>
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
+
+
 <body>
-      <!-- ========== HEADER ========== -->
+  <!-- ========== HEADER ========== -->
   <header class="site-header">
     <nav class="nav-container">
-      <div class="header-brand">Gustavo Drum Tonello</div>
-      <button class="nav-menu-btn">
-        <span class="material-symbols-outlined">menu</span>
+      <div class="header-brand">Gustavo Drum</div>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </div>
+      <button class="nav-menu-btn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
       </button>
     </nav>
   </header>
- 
+
   <!-- ========== MAIN ========== -->
   <main>
- 
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section class="hero-section">
-      <div class="hero-overlay"></div>
       <div class="hero-container">
         <div class="hero-text">
           <h1 class="hero-title">
             Construindo o <span class="hero-highlight">Futuro</span> através do código.
           </h1>
           <p class="hero-subtitle">
-            Estudante do ensino médio e entusiasta do mundo tecnológico. O meu foco está em criar soluções digitais que não sejam apenas inovadoras, mas que resolvam problemas reais do dia a dia. Entre linhas de código e novas ferramentas, procuro sempre aprender algo novo e aplicar a criatividade para construir o futuro digital, um projeto de cada vez.
+            Estudante do ensino médio apaixonado por tecnologia. Meu foco está em criar soluções digitais inovadoras que resolvem problemas reais. Entre linhas de código e novas ferramentas, procuro sempre aprender algo novo e aplicar criatividade para construir o futuro digital.
           </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+            <a href="#contact" class="btn btn-secondary">Entrar em Contato</a>
+          </div>
         </div>
-        <div class="content">
-   <div class="planet">
-      <div class="ring"></div>
-         <div class="cover-ring"></div>
-      <div class="spots">
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-
-      </div>
-   </div>
-</div>
-        
+        <div class="hero-visual">
+          <!-- From Uiverse.io by Admin12121 -->
+          <div class="content">
+            <div class="planet">
+              <div class="ring"></div>
+              <div class="cover-ring"></div>
+              <div class="spots">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
- 
-    <!-- About -->
-    <section class="section section--surface" id="about">
-      <div class="section-container">
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="section-title">
+          <h2>Sobre Mim</h2>
+          <p class="section-subtitle">Conheca minha jornada na tecnologia</p>
+        </div>
+        
         <div class="about-grid">
-          <div class="about-main-card">
-            <span class="material-symbols-outlined about-icon">Sobre Mim</span>
-            <h3 class="about-card-title">Estudante de Ensino Médio</h3>
+          <div class="about-card">
+            <div class="about-card-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="about-card-title">Estudante</h3>
             <p class="about-card-text">
-              Atualmente cursando o ensino médio, concilio meus estudos acadêmicos com o desenvolvimento de projetos tecnológicos. Minha jornada na programação começou com a curiosidade de entender como as coisas funcionam "por baixo do capô".
+              Atualmente cursando o ensino médio, conciliando estudos acadêmicos com desenvolvimento de projetos tecnológicos.
             </p>
           </div>
+
+          <div class="about-card">
+            <div class="about-card-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3 class="about-card-title">Criatividade</h3>
+            <p class="about-card-text">
+              Transformando ideias em protótipos reais, sempre buscando a melhor solução para cada problema.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="about-card-title">Colaboração</h3>
+            <p class="about-card-text">
+              Trabalho bem em equipe, com foco em liderança e colaboração em projetos escolares.
+            </p>
+          </div>
+
           <div class="about-stat-card">
-            <span class="about-stat-number">+1</span>
-            <p class="about-stat-label">Anos de Código</p>
+            <div class="about-stat-number">+1</div>
+            <div class="about-stat-label">Anos de Experiência</div>
           </div>
-          <div class="about-attr-card">
-            <div class="about-attr-icon about-attr-icon--secondary">
+
+          <div class="about-card">
+            <div class="about-card-icon">
+              <i class="fas fa-rocket"></i>
             </div>
-            <div>
-              <h4 class="about-attr-title">Criatividade</h4>
-              <p class="about-attr-text">Transformando ideias em protótipos reais.</p>
-            </div>
+            <h3 class="about-card-title">Inovação</h3>
+            <p class="about-card-text">
+              Sempre buscando as melhores ferramentas e tecnologias para criar soluções inovadoras.
+            </p>
           </div>
-          <div class="about-attr-card">
-            <div class="about-attr-icon about-attr-icon--tertiary">
+
+          <div class="about-card">
+            <div class="about-card-icon">
+              <i class="fas fa-code"></i>
             </div>
-            <div>
-              <h4 class="about-attr-title">Inovação</h4>
-              <p class="about-attr-text">Sempre buscando a melhor ferramenta para o problema.</p>
-            </div>
-          </div>
-          <div class="about-attr-card">
-            <div class="about-attr-icon about-attr-icon--primary">
-            </div>
-            <div>
-              <h4 class="about-attr-title">Trabalho em Equipe</h4>
-              <p class="about-attr-text">Liderança e colaboração em projetos escolares.</p>
-            </div>
+            <h3 class="about-card-title">Desenvolvimento</h3>
+            <p class="about-card-text">
+              Especializado em desenvolvimento web, com paixão por criar interfaces elegantes e funcionais.
+            </p>
           </div>
         </div>
       </div>
     </section>
- 
-    <!-- Skills -->
-    <section class="section section--surface" id="skills">
-      <div class="section-container">
-        <div class="section-header section-header--center">
-          <h2 class="section-title">Habilidades &amp; Tecnologias</h2>
-          <p class="section-subtitle">As ferramentas que utilizo para dar vida às ideias.</p>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="skills-container">
+        <div class="section-title">
+          <h2>Habilidades &amp; Tecnologias</h2>
+          <p class="section-subtitle">As ferramentas que utilizo para dar vida às ideias</p>
         </div>
+
         <div class="skills-grid">
           <div class="skill-card">
-            <span class="material-symbols-outlined skill-icon">HTML</span>
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="skill-label">HTML</div>
           </div>
+
           <div class="skill-card">
-            <span class="material-symbols-outlined skill-icon">CSS</span>
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="skill-label">CSS</div>
           </div>
+
           <div class="skill-card">
-            <span class="material-symbols-outlined skill-icon">JS</span>
+            <div class="skill-icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <div class="skill-label">JavaScript</div>
+          </div>    
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="projects-container">
+        <div class="section-title">
+          <h2>Projetos Recentes</h2>
+          <p class="section-subtitle">Trabalhos que demonstram minha criatividade e habilidades</p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Bandeiras</h3>
+              <p class="project-description">
+                Algumas bandeiras de paíeses.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+              </div>
+              <a href="https://github.com/gustavodrumtonello-dev/Bandeiras" target="_blank" class="project-link">Ver Projeto <i class="fas fa-arrow-right"></i></a>
+            </div>
           </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Blog</h3>
+              <p class="project-description">
+                Um blog online sobre o mundo da música.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+              </div>
+              <a href="https://github.com/gustavodrumtonello-dev/Blog" target="_blank" class="project-link">Ver Projeto <i class="fas fa-arrow-right"></i></a>
+            </div>
           </div>
+
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <div class="section-title">
+          <h2>Vamos Conversar?</h2>
+          <p class="section-subtitle">Estou sempre aberto a novas oportunidades e colaborações</p>
+        </div>
+
+        <p class="contact-text">
+          Se você tem uma ideia interessante, um projeto em mente ou simplesmente quer trocar ideias sobre tecnologia, não hesite em entrar em contato comigo. Vou adorar ouvir sobre seu projeto!
+        </p>
+
+        <div class="contact-links">
+          <a href="https://github.com/gustavodrumtonello-dev" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
         </div>
       </div>
     </section>
   </main>
- 
+
   <!-- ========== FOOTER ========== -->
   <footer class="site-footer">
     <div class="footer-container">
-      <div class="footer-brand">Gustavo Drum Tonello</div>
-      <div class="footer-links">
-        <button class="btn-footer" onlick="window.open('https://github.com/gustavodrumtonello-dev', '_blank')">
-            <i class="fa-brands fa-square-github"></i>
-        </button>
-        <a class="btn-footer" href="#">Instagram</a>
-        <a class="btn-footer" href="#">Whatsapp</a>
+      <div class="footer-brand-section">
+        <div class="footer-brand">Gustavo Drum Tonello</div>
+        <p class="footer-description">
+          Desenvolvedor web e entusiasta de tecnologia, criando soluções digitais inovadoras.
+        </p>
       </div>
-      <div class="footer-copy">© 2024 Gustavo Drum Tonello</div>
+
+      <div class="footer-links-section">
+        <div class="footer-links-title">Links Rápidos</div>
+        <div class="footer-links">
+          <a href="#about" class="footer-link">Sobre</a>
+          <a href="#skills" class="footer-link">Habilidades</a>
+          <a href="#projects" class="footer-link">Projetos</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Gustavo Drum Tonello. Todos os direitos reservados.</p>
+      </div>
     </div>
   </footer>
- 
-    
+
+
 </body>
 </html>
